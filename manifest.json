@@ -1,0 +1,21 @@
+{
+    "name": "Quick save images",
+    "description": "少し面倒な「名前を付けて保存」を省略し、ボタン一つで即セーブ出来る拡張機能！",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "contextMenus",
+        "activeTab",
+        "downloads"
+    ],
+    "icons": {
+        "48": "./icon_48.png"
+    },
+    "background": {
+        "service_worker": "service_worker.js",
+        "type": "module"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
